@@ -12,34 +12,29 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import NinaNitzscheIcon from './NinaNitzscheIcon.png'
 import {Grid} from "@mui/material";
+import {animateScroll as scroll, Link} from "react-scroll";
 
-const pages = ['Start', 'Über mich', 'Kontakt', 'Kundenzugang'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Start', 'AboutMe', 'Kontakt', 'Portfolio'];
 
+const scrollToTop = () => {
+    scroll.scrollToTop();
+};
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
     };
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-
     return (
         <AppBar position="static" className="appbar">
             <Container maxWidth="xl" className="appbar">
                 <Toolbar disableGutters>
-                    <img src={NinaNitzscheIcon} alt="Nina Nitzscge Photography" height="50px"/>
+                    <img src={NinaNitzscheIcon} alt="Nina Nitzsche Photography" height="50px" onClick={scrollToTop}/>
                     <Grid container spacing={2}  alignItems="center">
                         <Grid item xs={12} md={4}>
                         <Typography
@@ -94,7 +89,16 @@ function ResponsiveAppBar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Link
+                                        activeClass="active"
+                                        to={page}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}
+                                    >
+                                        <Typography textAlign="center">{page}</Typography>
+                                    </Link>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -121,13 +125,20 @@ function ResponsiveAppBar() {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Grid item xs={12} md={3}>
-
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'black', display: 'block' }}
                             >
-                                {page}
+                                <Link
+                                    activeClass="active"
+                                    to={page}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={1200}
+                                >
+                                    <Typography textAlign="center">{page}</Typography>
+                                </Link>
                             </Button>
                             </Grid>
 

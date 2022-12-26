@@ -1,26 +1,29 @@
 import './App.css';
-import {createTheme, Grid, ImageList, ImageListItem} from "@mui/material";
+import {Grid} from "@mui/material";
 import './Herbst-14.jpg';
 import Box from "@mui/material/Box";
-import background from './Herbst-14.jpg';
-import ResponsiveAppBar from "./Appbar";
 import * as React from "react";
 import Button from "@mui/material/Button";
 import QuiltedImageList from "./QuiltedImageList";
 import ContactForm from "./contactForm";
-
-
+import NinaNitzscheIcon from "./NinaNitzscheIcon.png";
+import Navbar from "./Navbar";
+import Section from "./section";
+import Appbar from "./Appbar";
+import Typography from "@mui/material/Typography";
+import {Link} from "react-scroll";
 
 
 function App() {
 
-
   return (
     <div className="App">
-      <ResponsiveAppBar className="appbar"/>
+
+       <Appbar className="appbar"/>
       <Box sx={{ display: 'flex' }} className="box">
         <div className="heading"  >
-<p>Nina Nitzsche Photography</p>
+            <img src={NinaNitzscheIcon} alt="Nina Nitzscge Photography" width="200" />
+            <p>Nina Nitzsche Photography</p>
         <h1>Familienfotograf aus Johannisthal</h1>
         </div>
       </Box>
@@ -53,7 +56,7 @@ function App() {
             </Grid>
           </Grid>
 
-          <Grid container  spacing={2} className="informationText aboutMe">
+          <Grid container  spacing={2} className="informationText aboutMe"  id="AboutMe">
             <Grid item xs={12} sm={6} className="about">
 
             </Grid>
@@ -86,7 +89,7 @@ function App() {
             <Grid container  spacing={2} className="aboutMe treptow">
             <Grid item xs={12} md={6} className="location">
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className="backgroundPadding" >
                 <h3 className=" schnorkel darkFont" color="black">Warum ich so gern in Treptows Bezirken Familienfotos mache...</h3>
 
                 <p>
@@ -123,6 +126,16 @@ function App() {
                         Als grünster Bezirk liefert Treptow-Köpenick die schönsten Ecken für einmalige Fotos. Mit vielen Spielplätzen, Parks, der Spree und auch kleinen Waldecken lassen sich wunderschöne Familienbilder zaubern.
   </p>
                     <Button variant="outlined">Mein Portfolio</Button>
+                    <Link
+                        activeClass="active"
+                        to="Portfolio"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <Typography textAlign="center">Mein Portfolio</Typography>
+                    </Link>
                 </Grid>
             </Grid>
             <Box sx={{ display: 'flex' }} className="winter box">
@@ -132,10 +145,10 @@ function App() {
                     <p className="cursiv-paragraph">C.V. Levis</p>
                 </div>
             </Box>
-            <QuiltedImageList/>
+            <QuiltedImageList id="Portfolio"/>
         </container>
       </header>
-        <Grid container>
+        <Grid container id="Kontakt">
             <Grid item xs={12} sm={4}>
                 <ContactForm/>
             </Grid>

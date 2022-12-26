@@ -18,6 +18,10 @@
   padding: 30px
 }
 
+.backgroundPadding h2, .backgroundPadding p {
+  padding: 30px;
+}
+
  .information-text {
    padding: 30px;
    background-color: rgb(235, 230, 224);
@@ -169,7 +173,7 @@ color: black;
 
 background: url(./Herbst-14.jpg) no-repeat center center fixed;
 background-size: cover;
-height: 100vh;
+height: 200vh;
 }
 
 .winter{
@@ -186,6 +190,12 @@ height: 100vh;
 
 .heading {
   background-color: rgb(100 95 88 / 32%);
+  width: 100%;
+  margin-top: 100vh;
+}
+
+.heading img {
+  padding-top:10px;
 }
 
 .heading p{
@@ -231,8 +241,6 @@ h2 {
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 60%;
-margin-top: 50vh;
 }
 .App-link {
 color: #61dafb;

@@ -34,6 +34,7 @@ export default function QuiltedImageList() {
             variant="quilted"
             cols={4}
             rowHeight={121}
+            id="Portfolio"
         >
             {itemData.map((item) => (
                 <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
