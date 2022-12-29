@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'SnellRoundhand';
-    src: local('SnellRoundhand'), url(fonts/SnellRoundhandRegular.ttf) format('ttf');
+    src: local('SnellRoundhand'), url(../../ninanitzschephotography/public/fonts/SnellRoundhandRegular.ttf) format('ttf');
 }
 
 @font-face {
     font-family: 'FuturaLight';
-    src: local('FuturaLight'), url(public/fonts/FuturaLight.ttf) format('ttf');
+    src: local('FuturaLight'), url(../../ninanitzschephotography/public/fonts/FuturaLight.ttf) format('ttf');
 }
 
 @font-face {
     font-family: 'FuturaBold';
-    src: local('FuturaBold'), url(fonts/FuturaBold.otf) format('otf');
+    src: local('FuturaBold'), url(../../ninanitzschephotography/public/fonts/FuturaBold.otf) format('otf');
 }
 
 @font-face {
     font-family: 'FuturaMedium';
-    src: local('FuturaMedium'), url(fonts/FuturaMedium.otf) format('otf');
+    src: local('FuturaMedium'), url(../../ninanitzschephotography/public/fonts/FuturaMedium.otf) format('otf');
 }
 @font-face {
     font-family: 'RalewayLight';
-    src: local('RalewayLight'), url(fonts/RalewayLight.ttf) format('ttf');
+    src: local('RalewayLight'), url(../../ninanitzschephotography/public/fonts/RalewayLight.ttf) format('ttf');
 }

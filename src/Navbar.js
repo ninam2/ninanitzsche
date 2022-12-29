@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./NinaNitzscheIcon.png";
+import logo from "../../ninanitzschephotography/public/NinaNitzscheIcon.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {

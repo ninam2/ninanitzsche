@@ -1,12 +1,12 @@
 import './App.css';
 import {Grid} from "@mui/material";
-import './Herbst-14.jpg';
+import '../../ninanitzschephotography/public/Herbst-14.jpg';
 import Box from "@mui/material/Box";
 import * as React from "react";
 import Button from "@mui/material/Button";
 import QuiltedImageList from "./QuiltedImageList";
 import ContactForm from "./contactForm";
-import NinaNitzscheIcon from "./NinaNitzscheIcon.png";
+import NinaNitzscheIcon from "../../ninanitzschephotography/public/NinaNitzscheIcon.png";
 import Navbar from "./Navbar";
 import Section from "./section";
 import Appbar from "./Appbar";

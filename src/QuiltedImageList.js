@@ -1,22 +1,22 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import Familie1 from './teresa/_DSC2559.jpg';
-import Familie2 from './teresa/_DSC2568.jpg';
-import Familie3 from './teresa/_DSC3221.jpg';
-import Familie4 from './teresa/_DSC3005.jpg';
-import Familie5 from './teresa/_DSC2632.jpg';
-import Familie6 from './teresa/_DSC2917.jpg';
-import Familie7 from './teresa/_DSC2839.jpg';
-import Familie8 from './teresa/_DSC3289.jpg';
-import Familie9 from './teresa/_DSC3083.jpg';
-import Familie10 from './teresa/_DSC3143.jpg';
-import Familie11 from './teresa/_DSC3133.jpg';
-import Familie12 from './teresa/_DSC2886.jpg';
-import Familie13 from './teresa/_DSC2758.jpg';
-import Familie14 from './teresa/_DSC3076.jpg';
-import Familie15 from './teresa/_DSC2774.jpg';
-import Familie16 from './teresa/_DSC2809.jpg';
+import Familie1 from '../../ninanitzschephotography/public/teresa/_DSC2559.jpg';
+import Familie2 from '../../ninanitzschephotography/public/teresa/_DSC2568.jpg';
+import Familie3 from '../../ninanitzschephotography/public/teresa/_DSC3221.jpg';
+import Familie4 from '../../ninanitzschephotography/public/teresa/_DSC3005.jpg';
+import Familie5 from '../../ninanitzschephotography/public/teresa/_DSC2632.jpg';
+import Familie6 from '../../ninanitzschephotography/public/teresa/_DSC2917.jpg';
+import Familie7 from '../../ninanitzschephotography/public/teresa/_DSC2839.jpg';
+import Familie8 from '../../ninanitzschephotography/public/teresa/_DSC3289.jpg';
+import Familie9 from '../../ninanitzschephotography/public/teresa/_DSC3083.jpg';
+import Familie10 from '../../ninanitzschephotography/public/teresa/_DSC3143.jpg';
+import Familie11 from '../../ninanitzschephotography/public/teresa/_DSC3133.jpg';
+import Familie12 from '../../ninanitzschephotography/public/teresa/_DSC2886.jpg';
+import Familie13 from '../../ninanitzschephotography/public/teresa/_DSC2758.jpg';
+import Familie14 from '../../ninanitzschephotography/public/teresa/_DSC3076.jpg';
+import Familie15 from '../../ninanitzschephotography/public/teresa/_DSC2774.jpg';
+import Familie16 from '../../ninanitzschephotography/public/teresa/_DSC2809.jpg';
 
 function srcset(image, size, rows = 1, cols = 1) {
     return {

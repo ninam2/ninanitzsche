@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import NinaNitzscheIcon from './NinaNitzscheIcon.png'
+import NinaNitzscheIcon from '../../ninanitzschephotography/public/NinaNitzscheIcon.png'
 import {Grid} from "@mui/material";
 import {animateScroll as scroll, Link} from "react-scroll";
 

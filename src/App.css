@@ -62,7 +62,7 @@ color: rgb(100 95 88) !important;
   border-color: rgb(100 95 88);
 }
 .about {
-  background: url(./Familienfotografin-NinaNitzsche.jpg) no-repeat ;
+  background: url(../../ninanitzschephotography/public/Familienfotografin-NinaNitzsche.jpg) no-repeat ;
   background-size: contain;
   background-position-x: center;
   background-position-y: center;
@@ -85,7 +85,7 @@ object-position: 50% 50%;
   font-size: 60px;
 }
 .location {
-  background: url(./Herbst-07.jpg) no-repeat ;
+  background: url(../../ninanitzschephotography/public/Herbst-07.jpg) no-repeat ;
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
@@ -97,7 +97,7 @@ object-position: 50% 50%;
 }
 
 .momentFotos {
-  background: url(./FamilienshootingPapaSohnBaumschulenweg.jpg) no-repeat ;
+  background: url(../../ninanitzschephotography/public/FamilienshootingPapaSohnBaumschulenweg.jpg) no-repeat ;
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
@@ -114,7 +114,7 @@ object-position: 50% 50%;
 }
 
 .pregnancy {
-  background: url(./SchwangerschaftInJohannisthal.jpg) no-repeat ;
+  background: url(../../ninanitzschephotography/public/SchwangerschaftInJohannisthal.jpg) no-repeat ;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -125,7 +125,7 @@ object-position: 50% 50%;
 }
 
 .largeImage {
-  background: url(./Schwangerschafsfoto_Johannisthal.jpg) no-repeat center center fixed ;
+  background: url(../../ninanitzschephotography/public/Schwangerschafsfoto_Johannisthal.jpg) no-repeat center center fixed ;
   background-size: cover;
   min-width: 100%;
   min-height: 80vh;
@@ -171,13 +171,13 @@ color: black;
 
 .box {
 
-background: url(./Herbst-14.jpg) no-repeat center center fixed;
+background: url(../../ninanitzschephotography/public/Herbst-14.jpg) no-repeat center center fixed;
 background-size: cover;
 height: 200vh;
 }
 
 .winter{
-background: url(./WintershootingTreptow.jpg) no-repeat center center fixed;
+background: url(../../ninanitzschephotography/public/WintershootingTreptow.jpg) no-repeat center center fixed;
 background-size: cover;
 height: 100vh;
   color: white;
